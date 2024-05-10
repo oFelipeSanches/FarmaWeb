@@ -16,7 +16,7 @@ public class Receita {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int idReceita;
+    private Long idReceita;
 
     @Column
     private String data_emissao;
