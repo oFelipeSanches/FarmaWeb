@@ -20,7 +20,7 @@ public class FarmaciaService implements IFarmaciaService {
     }
 
     @Override
-    public void editarFarmacia(Farmacia farmacia) {
+    public void alterarFarmacia(Farmacia farmacia) {
 
     }
 
@@ -36,6 +36,6 @@ public class FarmaciaService implements IFarmaciaService {
 
     @Override
     public Farmacia buscarFarmacia(Long id) {
-        return null;
+        return farmaciaRepository.findById(id).get();
     }
 }

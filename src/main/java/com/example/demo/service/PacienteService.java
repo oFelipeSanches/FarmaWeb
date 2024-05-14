@@ -15,11 +15,6 @@ public class PacienteService implements IPacienteService {
     private PacienteRepository pacienteRepository;
 
     @Override
-    public List<Paciente> listarPacientes() {
-        return List.of();
-    }
-
-    @Override
     public void cadastrar(Paciente paciente) {
 
     }
@@ -35,7 +30,12 @@ public class PacienteService implements IPacienteService {
     }
 
     @Override
+    public List<Paciente> listarPacientes() {
+        return List.of();
+    }
+
+    @Override
     public Paciente buscarPacientePorId(Long id) {
-        return null;
+        return pacienteRepository.findById(id).get();
     }
 }

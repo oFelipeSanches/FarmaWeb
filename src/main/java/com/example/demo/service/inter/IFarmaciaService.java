@@ -8,7 +8,7 @@ public interface IFarmaciaService {
 
     public void cadastrarFarmacia(Farmacia farmacia);
 
-    public void editarFarmacia(Farmacia farmacia);
+    public void alterarFarmacia(Farmacia farmacia);
 
     public void excluirFarmacia(Farmacia farmacia);
 
