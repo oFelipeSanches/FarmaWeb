@@ -10,7 +10,7 @@ public interface IMedicamentosService {
 
     public void alterarMedicamentos(Medicamentos medicamentos);
 
-    public void excluirMedicamentos(Medicamentos medicamentos);
+    public void excluirMedicamentos(Long id);
 
     public List<Medicamentos> listarMedicamentos();
 

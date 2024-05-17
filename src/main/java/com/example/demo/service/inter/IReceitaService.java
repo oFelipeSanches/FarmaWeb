@@ -10,7 +10,7 @@ public interface IReceitaService {
 
     public void alterarReceita(Receita receita);
 
-    public void excluirReceita(Receita receita);
+    public void excluirReceita(Long id);
 
     public List<Receita> listarReceitas();
 

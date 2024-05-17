@@ -16,17 +16,29 @@ public class MedicoService implements IMedicoService {
 
     @Override
     public void cadastrarMedico(Medico medico) {
+        if(medico == null) {
+            throw new RuntimeException();
+        }
 
+        medicoRepository.save(medico);
     }
 
     @Override
     public void alterarMedico(Medico medico) {
+        if(medico == null) {
+            throw new RuntimeException();
+        }
 
+        medicoRepository.save(medico);
     }
 
     @Override
-    public void excluirMedico(Medico medico) {
+    public void excluirMedico(Long id) {
+        if(id == null) {
+            throw new RuntimeException();
+        }
 
+        medicoRepository.deleteById(id);
     }
 
     @Override

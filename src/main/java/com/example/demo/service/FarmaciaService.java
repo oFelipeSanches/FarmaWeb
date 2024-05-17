@@ -16,22 +16,34 @@ public class FarmaciaService implements IFarmaciaService {
 
     @Override
     public void cadastrarFarmacia(Farmacia farmacia) {
+        if(farmacia == null) {
+            throw new RuntimeException();
+        }
 
+        farmaciaRepository.save(farmacia);
     }
 
     @Override
     public void alterarFarmacia(Farmacia farmacia) {
+        if(farmacia == null) {
+            throw new RuntimeException();
+        }
 
+        farmaciaRepository.save(farmacia);
     }
 
     @Override
-    public void excluirFarmacia(Farmacia farmacia) {
+    public void excluirFarmacia(Long id) {
+        if(id == null) {
+            throw new RuntimeException();
+        }
 
+        farmaciaRepository.deleteById(id);
     }
 
     @Override
     public List<Farmacia> listarFarmacia() {
-        return List.of();
+        return farmaciaRepository.findAll();
     }
 
     @Override

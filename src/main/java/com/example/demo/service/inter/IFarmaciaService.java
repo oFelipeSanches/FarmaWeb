@@ -10,7 +10,7 @@ public interface IFarmaciaService {
 
     public void alterarFarmacia(Farmacia farmacia);
 
-    public void excluirFarmacia(Farmacia farmacia);
+    public void excluirFarmacia(Long id);
 
     public List<Farmacia> listarFarmacia();
 

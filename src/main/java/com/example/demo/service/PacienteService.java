@@ -16,22 +16,34 @@ public class PacienteService implements IPacienteService {
 
     @Override
     public void cadastrar(Paciente paciente) {
+        if(paciente == null) {
+            throw new RuntimeException();
+        }
 
+        pacienteRepository.save(paciente);
     }
 
     @Override
     public void alterar(Paciente paciente) {
+        if(paciente == null) {
+            throw new RuntimeException();
+        }
 
+        pacienteRepository.save(paciente);
     }
 
     @Override
     public void excluirPaciente(Long id) {
+        if(id == null) {
+            throw new RuntimeException();
+        }
 
+        pacienteRepository.deleteById(id);
     }
 
     @Override
     public List<Paciente> listarPacientes() {
-        return List.of();
+        return pacienteRepository.findAll();
     }
 
     @Override

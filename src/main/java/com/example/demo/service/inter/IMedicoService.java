@@ -9,7 +9,7 @@ public interface IMedicoService {
 
     public void alterarMedico(Medico medico);
 
-    public void excluirMedico(Medico medico);
+    public void excluirMedico(Long id);
 
     public Medico listarPorId(Long id);
 

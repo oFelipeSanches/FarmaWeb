@@ -16,22 +16,34 @@ public class MedicamentosService implements IMedicamentosService {
 
     @Override
     public void cadastrarMedicamentos(Medicamentos medicamentos) {
+        if(medicamentos == null) {
+            throw new RuntimeException();
+        }
 
+        medicamentosRepository.save(medicamentos);
     }
 
     @Override
     public void alterarMedicamentos(Medicamentos medicamentos) {
+        if(medicamentos == null) {
+            throw new RuntimeException();
+        }
 
+        medicamentosRepository.save(medicamentos);
     }
 
     @Override
-    public void excluirMedicamentos(Medicamentos medicamentos) {
+    public void excluirMedicamentos(Long id) {
+        if(id == null) {
+            throw new RuntimeException();
+        }
 
+        medicamentosRepository.deleteById(id);
     }
 
     @Override
     public List<Medicamentos> listarMedicamentos() {
-        return List.of();
+        return medicamentosRepository.findAll();
     }
 
     @Override
