@@ -8,7 +8,7 @@ public interface IPacienteService {
 
     public List<Paciente> listarPacientes();
 
-    public void cadastrar(Paciente paciente);
+    public Paciente cadastrar(Paciente paciente);
 
     public void alterar(Paciente paciente);
 

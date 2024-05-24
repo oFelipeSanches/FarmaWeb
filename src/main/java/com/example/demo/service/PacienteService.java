@@ -15,12 +15,12 @@ public class PacienteService implements IPacienteService {
     private PacienteRepository pacienteRepository;
 
     @Override
-    public void cadastrar(Paciente paciente) {
+    public Paciente cadastrar(Paciente paciente) {
         if(paciente == null) {
             throw new RuntimeException();
         }
 
-        pacienteRepository.save(paciente);
+        return pacienteRepository.save(paciente);
     }
 
     @Override
