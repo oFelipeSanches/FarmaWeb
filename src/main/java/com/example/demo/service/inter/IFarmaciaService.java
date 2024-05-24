@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface IFarmaciaService {
 
-    public void cadastrarFarmacia(Farmacia farmacia);
+    public Farmacia cadastrarFarmacia(Farmacia farmacia);
 
     public void alterarFarmacia(Farmacia farmacia);
 

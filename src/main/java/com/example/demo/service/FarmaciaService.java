@@ -15,12 +15,12 @@ public class FarmaciaService implements IFarmaciaService {
     private FarmaciaRepository farmaciaRepository;
 
     @Override
-    public void cadastrarFarmacia(Farmacia farmacia) {
+    public Farmacia cadastrarFarmacia(Farmacia farmacia) {
         if(farmacia == null) {
             throw new RuntimeException();
         }
 
-        farmaciaRepository.save(farmacia);
+        return farmaciaRepository.save(farmacia);
     }
 
     @Override
