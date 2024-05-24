@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface IMedicamentosService {
 
-    public void cadastrarMedicamentos(Medicamentos medicamentos);
+    public Medicamentos cadastrarMedicamentos(Medicamentos medicamentos);
 
     public void alterarMedicamentos(Medicamentos medicamentos);
 

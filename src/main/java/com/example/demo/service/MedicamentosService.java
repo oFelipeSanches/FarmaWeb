@@ -15,12 +15,12 @@ public class MedicamentosService implements IMedicamentosService {
     private MedicamentosRepository medicamentosRepository;
 
     @Override
-    public void cadastrarMedicamentos(Medicamentos medicamentos) {
+    public Medicamentos cadastrarMedicamentos(Medicamentos medicamentos) {
         if(medicamentos == null) {
             throw new RuntimeException();
         }
 
-        medicamentosRepository.save(medicamentos);
+        return medicamentosRepository.save(medicamentos);
     }
 
     @Override
