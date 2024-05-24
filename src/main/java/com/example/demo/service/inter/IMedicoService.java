@@ -5,7 +5,7 @@ import com.example.demo.model.Medico;
 import java.util.List;
 public interface IMedicoService {
 
-    public void cadastrarMedico(Medico medico);
+    public Medico cadastrarMedico(Medico medico);
 
     public void alterarMedico(Medico medico);
 

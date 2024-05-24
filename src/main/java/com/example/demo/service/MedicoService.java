@@ -15,12 +15,12 @@ public class MedicoService implements IMedicoService {
     private MedicoRepository medicoRepository;
 
     @Override
-    public void cadastrarMedico(Medico medico) {
+    public Medico cadastrarMedico(Medico medico) {
         if(medico == null) {
             throw new RuntimeException();
         }
 
-        medicoRepository.save(medico);
+        return medicoRepository.save(medico);
     }
 
     @Override
