@@ -4,4 +4,4 @@
 <h2>Alunos:
 <br>Felipe Henrique Sanches
 </br>Gabriel Wentz Rocha
-</br>Victor Victor Carvalho</h2>
+</br>João Victor Carvalho</h2>
