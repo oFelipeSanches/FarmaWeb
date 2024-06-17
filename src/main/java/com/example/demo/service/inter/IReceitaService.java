@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface IReceitaService {
 
-    public void cadastrarReceita(Receita receita);
+    public Receita cadastrarReceita(Receita receita);
 
     public void alterarReceita(Receita receita);
 

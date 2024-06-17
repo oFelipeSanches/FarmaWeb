@@ -15,12 +15,12 @@ public class ReceitaService implements IReceitaService {
     private ReceitaRepository receitaRepository;
 
     @Override
-    public void cadastrarReceita(Receita receita) {
+    public Receita cadastrarReceita(Receita receita) {
         if(receita == null) {
             throw new RuntimeException();
         }
 
-        receitaRepository.save(receita);
+        return receitaRepository.save(receita);
     }
 
     @Override
